@@ -1,0 +1,32 @@
+﻿<Window x:Class="Sm4shTourneyGUI.ResultsView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sm4shTourneyGUI"
+        mc:Ignorable="d"
+        Title="Results View" Height="600" Width="500" Icon="/Resources/logo.ico" WindowStartupLocation="CenterOwner" SizeToContent="Height" MaxHeight="1000">
+    <Grid>
+        
+        <Rectangle Fill="Yellow" Opacity="0.5"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <TextBlock Text="Results!" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="38" FontWeight="ExtraBold" Margin="5"/>
+
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                <StackPanel Margin="10,10,10,10" HorizontalAlignment="Center" VerticalAlignment="Center" Name="SP_PlayerScores">
+                    <StackPanel.Resources>
+                        <Style TargetType="{x:Type local:PlayerCell}">
+                            <Setter Property="Margin" Value="0,0,0,10"/>
+                        </Style>
+                    </StackPanel.Resources>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Window>

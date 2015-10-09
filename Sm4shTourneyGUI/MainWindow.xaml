@@ -1,0 +1,39 @@
+﻿<Window x:Class="Sm4shTourneyGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:visuals="clr-namespace:Sm4shTourneyGUI.Visuals"
+        xmlns:local="clr-namespace:Sm4shTourneyGUI"
+        mc:Ignorable="d"
+        Title="Sm4sh Tourney" Height="800" Width="800" Icon="/Resources/logo.ico" MinWidth="800" MinHeight="800">
+    <Grid>
+
+        <!-- Window layout -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Menu>
+            </Menu>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <!-- Character List -->
+                <Grid Grid.Row="1">
+                    <local:CharacterList Width="225" x:Name="CL_Characters"/>
+                </Grid>
+
+                <!-- Tournament Scorekeeper -->
+                <Grid Grid.Row="1" Grid.Column="1">
+                    <local:TourneyView x:Name="TV_TourneyView"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

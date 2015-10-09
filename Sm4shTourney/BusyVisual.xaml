@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="Sm4shTourneyGUI.BusyVisual"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Image Name="IMG_logo_0" Source="Resources/logo_0.png" Width="150" HorizontalAlignment="Left" Height="168" VerticalAlignment="Top" Margin="6,31,0,0">
+            <Image.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard RepeatBehavior="Forever">
+                            <DoubleAnimation Storyboard.TargetName="IMG_logo_0" Storyboard.TargetProperty="Opacity" From="0" To="0" BeginTime="0:0:0" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetName="IMG_logo_0" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="0:0:1" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetName="IMG_logo_0" Storyboard.TargetProperty="Opacity" From="1" To="1" BeginTime="0:0:2" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetName="IMG_logo_0" Storyboard.TargetProperty="Opacity" From="1" To="0" BeginTime="0:0:3" Duration="0:0:1"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Image.Triggers>
+        </Image>
+        <Image Name="IMG_logo_1" Source="Resources/logo_1.png" HorizontalAlignment="Right" VerticalAlignment="Top" Width="148" Margin="0,20,26,0" Height="153">
+            <Image.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard RepeatBehavior="Forever">
+                            <DoubleAnimation Storyboard.TargetName="IMG_logo_1" Storyboard.TargetProperty="Opacity" From="1" To="0" BeginTime="0:0:0" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetName="IMG_logo_1" Storyboard.TargetProperty="Opacity" From="0" To="0" BeginTime="0:0:1" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetName="IMG_logo_1" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="0:0:2" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetName="IMG_logo_1" Storyboard.TargetProperty="Opacity" From="1" To="1" BeginTime="0:0:3" Duration="0:0:1"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Image.Triggers>
+        </Image>
+        <Image Name="IMG_logo_2" Source="Resources/logo_2.png" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="83" Margin="43,0,0,53" Width="83">
+            <Image.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard RepeatBehavior="Forever">
+                            <DoubleAnimation Storyboard.TargetName="IMG_logo_2" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="0:0:0" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetName="IMG_logo_2" Storyboard.TargetProperty="Opacity" From="1" To="1" BeginTime="0:0:1" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetName="IMG_logo_2" Storyboard.TargetProperty="Opacity" From="1" To="0" BeginTime="0:0:2" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetName="IMG_logo_2" Storyboard.TargetProperty="Opacity" From="0" To="0" BeginTime="0:0:3" Duration="0:0:1"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Image.Triggers>
+        </Image>
+        <Image Name="IMG_logo_3" Source="Resources/logo_3.png" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="134" Margin="0,0,35,43" Height="86">
+            <Image.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard RepeatBehavior="Forever">
+                            <DoubleAnimation Storyboard.TargetName="IMG_logo_3" Storyboard.TargetProperty="Opacity" From="1" To="1" BeginTime="0:0:0" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetName="IMG_logo_3" Storyboard.TargetProperty="Opacity" From="1" To="0" BeginTime="0:0:1" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetName="IMG_logo_3" Storyboard.TargetProperty="Opacity" From="0" To="0" BeginTime="0:0:2" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetName="IMG_logo_3" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="0:0:3" Duration="0:0:1"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Image.Triggers>
+        </Image>
+    </Grid>
+</UserControl>

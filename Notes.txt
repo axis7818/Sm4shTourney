@@ -1,0 +1,8 @@
+features:
+- random game mode generator 
+
+Tourney Scorekeeper
+- create a delete player option
+- add player color customization
+- printing a summary of tournaments
+- sorting results screen by points 
