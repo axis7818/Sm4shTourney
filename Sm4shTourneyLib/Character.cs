@@ -46,7 +46,7 @@ namespace Sm4shTourneyLib
 
             result += ".png";
 
-            //HOT FIX. SHOULD PARSE HTML FOR ACTUAL IMAGE NAMES
+            //TODO: HOT FIX. SHOULD PARSE HTML FOR ACTUAL IMAGE NAMES
             // THE DUCK HUNT IMAGE URL WAS NOT CORRECT
             if (result.Equals("duck_hunt.png"))
                 result = "duckhunt.png";
