@@ -31,7 +31,7 @@ namespace Sm4shTourneyLib
             }
         }
 
-        private string GetImageFileName()
+        public string GetImageFileName()
         {
             Regex r = new Regex(@"[\w\-]+");
             MatchCollection matches = r.Matches(Name.ToLower());
@@ -45,6 +45,11 @@ namespace Sm4shTourneyLib
             result = result.TrimEnd('_');
 
             result += ".png";
+
+            //HOT FIX. SHOULD PARSE HTML FOR ACTUAL IMAGE NAMES
+            // THE DUCK HUNT IMAGE URL WAS NOT CORRECT
+            if (result.Equals("duck_hunt.png"))
+                result = "duckhunt.png";
 
             return result;
         }

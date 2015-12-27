@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sm4shTourneyGUI", "Sm4shTou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sm4shTourneyLib", "Sm4shTourneyLib\Sm4shTourneyLib.csproj", "{B924712B-E041-403A-AF42-AD538DFD5C65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBed", "TestBed\TestBed.csproj", "{B84DD9AB-233A-409C-956A-166893EA2F96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{B924712B-E041-403A-AF42-AD538DFD5C65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B924712B-E041-403A-AF42-AD538DFD5C65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B924712B-E041-403A-AF42-AD538DFD5C65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B84DD9AB-233A-409C-956A-166893EA2F96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B84DD9AB-233A-409C-956A-166893EA2F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B84DD9AB-233A-409C-956A-166893EA2F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B84DD9AB-233A-409C-956A-166893EA2F96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
