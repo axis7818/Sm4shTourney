@@ -49,6 +49,7 @@ namespace Sm4shTourneyGUI
                 PlayerCell cell = new PlayerCell(player);
                 SP_PlayerScores.Children.Add(cell);
                 cell.SwitchOnResults(PlayerScores[player]);
+                cell.SwitchOffNewChallengerShroud();
             }
 
 

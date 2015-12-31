@@ -61,7 +61,7 @@
         </Grid>
         
         <!-- New Challenger Shroud -->
-        <Grid Name="G_NewChallengerShroud" Visibility="Collapsed">
+        <Grid Name="G_NewChallengerShroud" Visibility="Visible">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
