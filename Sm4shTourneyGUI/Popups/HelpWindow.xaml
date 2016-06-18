@@ -1,0 +1,81 @@
+﻿<Window x:Class="Sm4shTourneyGUI.Popups.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sm4shTourneyGUI.Popups"
+        mc:Ignorable="d"
+        Title="Help" Height="500" Width="350" ResizeMode="NoResize" Icon="/Resources/logo.ico">
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="TextBlock" x:Key="about-text">
+                <Setter Property="Margin" Value="10, 0, 0, 0"/>
+                <Setter Property="TextWrapping" Value="Wrap"/>
+                <Setter Property="FontSize" Value="10"/>
+                <Setter Property="FontWeight" Value="Light"/>
+                <Setter Property="FontStyle" Value="Italic"/>
+            </Style>
+            <Style TargetType="TextBlock" x:Key="text-block">
+                <Setter Property="Margin" Value="10, 5, 10, 10"/>
+                <Setter Property="TextWrapping" Value="Wrap"/>
+            </Style>
+            <Style TargetType="TextBlock" x:Key="text-header">
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="TextWrapping" Value="Wrap"/>
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <!-- About -->
+                <TextBlock Text="Sm4sh Tourney" Style="{StaticResource text-header}"/>
+                <TextBlock Style="{StaticResource text-block}">
+                    Sm4sh Tourney is a tool that enables a custom tournament style for smash 4. 
+                    The tournaments are intended to be small, intense, and long as each player participates in each match and plays every available character exactly once.
+                </TextBlock>
+                <TextBlock Style="{StaticResource text-block}">
+                    Begin the tournament by clicking 'Options' and defining names and values for possible rankings (i.e. First=3, Second=2, Third=0). 
+                    These values will be assigned to each player during each match and will be totaled in the end to determine the winner.
+                </TextBlock>
+                <TextBlock Style="{StaticResource text-block}">
+                    Then, click 'Add Player' to register each cometitor and their chosen sudden death smasher. 
+                    In the event of a tie, they will be assigned this character to compete in a final match.
+                </TextBlock>
+                
+                <!-- About the side panel -->
+                <TextBlock Style="{StaticResource text-header}">
+                    Character List
+                </TextBlock>
+                <TextBlock Style="{StaticResource text-block}">
+                    The column on the left of the window provides a list and ranking of all smashers pulled from eventhubs.com.
+                </TextBlock>
+                <TextBlock Style="{StaticResource text-block}">
+                    The Randomize button will randomly sort the list, the update button will retreive new character information and re-sort the list.
+                    The Print button will print the currently displayed list, and the add/remove button allows for custom additions or removals from the list.
+                </TextBlock>
+                
+                
+                <!-- Developer -->
+                <TextBlock Style="{StaticResource text-header}">
+                    Developer
+                </TextBlock>
+                <TextBlock Style="{StaticResource about-text}">
+                    Cameron Taylor
+                </TextBlock>
+                <TextBlock Style="{StaticResource about-text}">
+                    axis7818@gmail.com
+                </TextBlock>
+                <TextBlock Style="{StaticResource about-text}">
+                    August 2015
+                </TextBlock>
+                <TextBlock Style="{StaticResource about-text}">
+                    
+                </TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

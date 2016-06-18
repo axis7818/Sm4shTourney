@@ -70,6 +70,9 @@
     <Compile Include="Popups\CharacterRosterEditor.xaml.cs">
       <DependentUpon>CharacterRosterEditor.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Popups\HelpWindow.xaml.cs">
+      <DependentUpon>HelpWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Popups\PlayerOptions.xaml.cs">
       <DependentUpon>PlayerOptions.xaml</DependentUpon>
     </Compile>
@@ -115,6 +118,10 @@
     <Page Include="Popups\CharacterRosterEditor.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Popups\HelpWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Popups\PlayerOptions.xaml">
       <SubType>Designer</SubType>

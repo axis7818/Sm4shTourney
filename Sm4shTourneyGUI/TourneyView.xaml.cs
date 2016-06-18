@@ -204,5 +204,12 @@ namespace Sm4shTourneyGUI
             }
             return true;
         }
+
+        private void BTN_HelpButton_Click(object sender, RoutedEventArgs e)
+        {
+            HelpWindow help = new HelpWindow();
+            help.Owner = Application.Current.MainWindow;
+            help.ShowDialog();
+        }
     }
 }
